@@ -5,7 +5,7 @@ return array(
     | HipChat Url
     |--------------------------------------------------------------------------
     */
-    'server' => env('HIPCHAT_URL'),
+    'url' => env('HIPCHAT_URL'),
     /*
     |--------------------------------------------------------------------------
     | HipChat API Token
@@ -14,7 +14,7 @@ return array(
     | Required API Token from HipChat
     |
     */
-    'api_token' => env('HIPCHAT_TOKEN'), // this is required
+    'token' => env('HIPCHAT_TOKEN'), // this is required
 
     /*
     |--------------------------------------------------------------------------
@@ -27,12 +27,12 @@ return array(
     |
     */
     'color' => 'green',
-     /*
-    |--------------------------------------------------------------------------
-    | HipChat Default Notify
-    |--------------------------------------------------------------------------
-    | Sends a notification to room users if set to true (default).
-    */
+    /*
+   |--------------------------------------------------------------------------
+   | HipChat Default Notify
+   |--------------------------------------------------------------------------
+   | Sends a notification to room users if set to true (default).
+   */
     'notify' => true,
     /*
     |--------------------------------------------------------------------------

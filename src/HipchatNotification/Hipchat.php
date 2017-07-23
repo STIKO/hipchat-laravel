@@ -20,13 +20,13 @@ class Hipchat
 
     public function __construct()
     {
-        $url = config('hipchat.rul');
+        $url = config('hipchat.url');
         $token = config('hipchat.token');
         $this->url = $url . '?auth_token=' . $token;
-        $this->options['color'] = env('hipchat.color');
-        $this->options['message'] = env('hipchat.message');
-        $this->options['notify'] = env('hipchat.notify');
-        $this->options['message_format'] = env('hipchat.message_format');
+        $this->options['color'] = config('hipchat.color');
+        $this->options['message'] = config('hipchat.message');
+        $this->options['notify'] = config('hipchat.notify');
+        $this->options['message_format'] = config('hipchat.message_format');
     }
 
     public function message($message)
