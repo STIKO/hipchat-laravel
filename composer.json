@@ -1,8 +1,17 @@
 {
     "name": "STIKO/hipchat-laravel",
+    "type": "library",
+    "keywords": ["hipchat","laravel"],
+    "homepage": "https://github.com/STIKO/hipchat-laravel/tree/master",
+    "description": "Simple hipchat notification for laravel projects.",
+    "require": {
+        "php": ">=5.3.0",
+        "guzzlehttp/guzzle": "^6.2",
+
+    },
     "autoload": {
         "psr-0" : {
-            "Hipchat\\Notification" : "src"
+            "HipchatNotification" : "src"
         }
     }
 }

@@ -6,7 +6,7 @@
  * Time: 10:40 PM
  */
 
-namespace Hipchat\Notification;
+namespace HipchatNotification;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
