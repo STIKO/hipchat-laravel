@@ -30,7 +30,7 @@ HIPCHAT_URL=YourhipchatUrlHere
 2.  click `Integration`
 3. Choose your room then click `Build your own Integration`
 4. In the section `Send messages to this room` you can find your `url` and `token`
-[Hichat url and token](img/hipchat.png)
+![Hipchat url and token](img/hipchat.png)
 
 **Usage**
 - The simplest way to start is
