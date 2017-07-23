@@ -16,19 +16,17 @@ class HipchatNotification
 {
 
     private $url;
-    private $options = array(
-        'color' => 'green',
-        'message' => 'My first notification (yey)',
-        'notify' => true,
-        'message_format' => 'text',
-        'from' => 'Toolbox Brown Sugar',
-    );
+    private $options = array();
 
     public function __construct()
     {
-        $url = env('HIPCHAT_URL');
-        $token = env('HIPCHAT_TOKEN');
+        $url = config('hipchat.rul');
+        $token = config('hipchat.token');
         $this->url = $url . '?auth_token=' . $token;
+        $this->options['color'] = env('hipchat.color');
+        $this->options['message'] = env('hipchat.message');
+        $this->options['notify'] = env('hipchat.notify');
+        $this->options['message_format'] = env('hipchat.message_format');
     }
 
     public function message($message)
