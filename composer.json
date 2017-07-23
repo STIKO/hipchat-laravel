@@ -1,0 +1,8 @@
+{
+    "name": "STIKO/hipchat-laravel",
+    "autoload": {
+        "psr-0" : {
+            "Hipchat\\Notification" : "src"
+        }
+    }
+}
