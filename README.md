@@ -1,5 +1,5 @@
 # hipchat-laravel
-A simple hipchat nitification for laravel
+A simple hipchat notification for laravel5
 
 
 **Installation**
