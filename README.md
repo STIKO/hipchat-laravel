@@ -3,12 +3,12 @@ A simple hipchat nitification for laravel
 
 
 **Installation**
--Require composer 
+- Require composer 
 ```
 composer require stiko/hipchat-laravel
 ```
 
--Add ServiceProvider to `app/config/app.php`:
+- Add ServiceProvider to `app/config/app.php`:
 ```
 ...
 'providers' => [
