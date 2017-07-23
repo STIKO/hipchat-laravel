@@ -6,7 +6,7 @@
     "description": "Simple hipchat notification for laravel projects.",
     "require": {
         "php": ">=5.3.0",
-        "guzzlehttp/guzzle": "^6.2",
+        "guzzlehttp/guzzle": "^6.2"
 
     },
     "autoload": {
