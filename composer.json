@@ -1,5 +1,5 @@
 {
-    "name": "STIKO/hipchat-laravel",
+    "name": "stiko/hipchat-laravel",
     "type": "library",
     "keywords": ["hipchat","laravel"],
     "homepage": "https://github.com/STIKO/hipchat-laravel/tree/master",
