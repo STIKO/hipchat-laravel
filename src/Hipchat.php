@@ -12,7 +12,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Facades\Log;
 
-class HipchatNotification
+class Hipchat
 {
 
     private $url;
