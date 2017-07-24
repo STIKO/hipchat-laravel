@@ -1,6 +1,6 @@
 {
     "name": "stiko/hipchat-laravel",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "type": "library",
     "keywords": ["hipchat","laravel"],
     "homepage": "https://github.com/STIKO/hipchat-laravel/tree/master",
