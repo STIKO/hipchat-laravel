@@ -15,10 +15,15 @@ class HipchatLaravelServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // published config file
-        $this->publishes([
-            __DIR__ . '/../config/hipchat.php' => config_path('hipchat.php')
-        ], 'hipchat');
+        if (method_exists($this,'config_path')) {
+            // published config file
+            $this->publishes([
+             __DIR__ . '/../config/hipchat.php' => config_path('hipchat.php')
+            ], 'hipchat');
+        } else {
+            echo 'config_path method does not exist! Try to copy src/config/hipchat.php to /config/hichat.php';
+
+        }
     }
     /**
      * Register the service provider.

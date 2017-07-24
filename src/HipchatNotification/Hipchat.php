@@ -20,6 +20,16 @@ class Hipchat
 
     public function __construct()
     {
+        /*
+         * Config not loaded (possibly it's lumen)
+         */
+        if (!config('hipchat.url') & !config('hipchat.token')) {
+            $conf_path = App::basePath(). '/config/hipchat.php';
+            $conf = include $conf_path;
+            config(['hipchat' => $conf]);
+
+        }
+
         $url = config('hipchat.url');
         $token = config('hipchat.token');
         $this->url = $url . '?auth_token=' . $token;
