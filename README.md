@@ -1,8 +1,7 @@
 # hipchat-laravel
-A simple hipchat notification for laravel5
+A simple hipchat nitification for laravel/Lumen
 
-
-**Installation**
+**Laravel Installation**
 - Require composer 
 ```
 composer require stiko/hipchat-laravel
@@ -16,21 +15,44 @@ composer require stiko/hipchat-laravel
     HipchatNotification\HipchatLaravelServiceProvider::class,
 ],
 ```
-- Publish
+- Publish 
 ```
 php artisan vendor:publish --provider="HipchatNotification\HipchatLaravelServiceProvider"
 ```
+
 - Lastly, add env variables to `.env` file
 ```
 HIPCHAT_TOKEN=YourTokenhere
 HIPCHAT_URL=YourhipchatUrlHere
 ```
+---
+**Lumen Installation**
+- Require composer 
+```
+composer require stiko/hipchat-laravel
+```
+
+- Add ServiceProvider to `bootstrap/app.php`:
+```
+...
+//Hipchat provider
+$app->register('HipchatNotification\HipchatLaravelServiceProvider');
+```
+- Copy ``src/config/hipchat.php`` to  ``config/hipchat.php``
+
+- Lastly, add env variables to `.env` file
+```
+HIPCHAT_TOKEN=YourTokenhere
+HIPCHAT_URL=YourhipchatUrlHere
+```
+
+---
 **Get Token**
-1. Log in to hipchat.com 
+1. Log in to [Hipchat](https://bouncetv.hipchat.com/addons/?from_location_id=2&source_id=1) 
 2.  click `Integration`
 3. Choose your room then click `Build your own Integration`
 4. In the section `Send messages to this room` you can find your `url` and `token`
-![Hipchat url and token](img/hipchat.png)
+[Hichat url and token](img/hipchat.png)
 
 **Usage**
 - The simplest way to start is
