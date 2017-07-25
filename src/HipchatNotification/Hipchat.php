@@ -10,6 +10,7 @@ namespace HipchatNotification;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
 
 class Hipchat
