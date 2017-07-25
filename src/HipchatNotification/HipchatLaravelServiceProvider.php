@@ -20,9 +20,6 @@ class HipchatLaravelServiceProvider extends ServiceProvider
             $this->publishes([
              __DIR__ . '/../config/hipchat.php' => config_path('hipchat.php')
             ], 'hipchat');
-        } else {
-            echo 'config_path method does not exist! Try to copy src/config/hipchat.php to /config/hichat.php';
-
         }
     }
     /**
